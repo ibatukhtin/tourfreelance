@@ -1,0 +1,29 @@
+a {
+  border-bottom: 1px solid var(--primary-color);
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.7rem;
+  padding: 0 3rem;
+  color: var(--Text-White);
+  background-color: rgba(199, 123, 0, 0.7);
+  border: 1px solid var(--Text-White);
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(199, 123, 0, 0.9);
+  }
+  @media (min-width: 50rem) {
+    height: 3.2rem;
+    border-radius: 2.5rem;
+    font-size: 1.2rem;
+  }
+}

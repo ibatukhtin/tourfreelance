@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" sizes="57x57" href="icons/favicon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="icons/favicon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="icons/favicon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="icons/favicon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="icons/favicon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="icons/favicon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="icons/favicon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="icons/favicon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="icons/favicon-180x180.png">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="icons/favicon-192x192.png">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon-144x144.png">
+	<meta name="msapplication-config" content="browserconfig.xml">
+	<link rel="manifest" href="manifest.json">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="canonical" href="https://tourfreelance.ru/registration.html">
+	<title>Тур Фриланс | Регистрация</title>
+	<meta name="description" content="Форма регистрации фрилансера в туристической системе">
+	<meta name="robots" content="noindex, nofollow">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/registration.css">
+	<meta property="og:title" content="Тур Фриланс | Регистрация">
+	<meta property="og:description" content="Форма регистрации фрилансера в туристической системе">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://tourfreelance.ru/img/logo.webp">
+	<meta property="og:url" content="https://tourfreelance.ru/registration.html">
+	<script src="js/footer.js" type="text/javascript" defer></script>
+	<script src="js/files_upload.js" defer></script>
+</head>
+<body>
+<header>
+	<div class="container h-100">
+		<div class="logo h-100">
+			<div class="tour">Tour</div>
+			<div class="freelance">Freelance.ru</div>
+		</div>
+	</div>
+</header>
+
+<div></div>
+
+<main style="margin-top: 100px">
+	<div class="container">
+		<section id="registration" class="registration">
+			<h1 class="text-center">Форма регистрации фрилансера <br/> в туристической системе</h1>
+			<div class="form__wrapper mt-1">
+				<form action="" class="registration__form">
+					<label class="w-100">
+						<input class="tf-input w-100" type="text" placeholder="Фамилия" />
+					</label>
+					<label class="w-100">
+						<input class="tf-input w-100" type="text" placeholder="Имя" />
+					</label>
+					<label class="w-100">
+						<input class="tf-input w-100" type="text" placeholder="Отчество" />
+					</label>
+
+					<div class="files__upload-wrapper mt-2">
+						<label for="inn-btn" class="file__upload">
+							<input type="file" id="inn-btn" hidden/>
+							<span id="inn-name">Свидетельство ИНН</span>
+						</label>
+						<label for="passport1-btn" class="file__upload">
+							<input type="file" id="passport1-btn" hidden/>
+							<span id="passport1-name">Фото или скан паспорта (разворот с фото)</span>
+						</label>
+						<label for="passport2-btn" class="file__upload">
+							<input type="file" id="passport2-btn" hidden/>
+							<span id="passport2-name">Фото или скан паспорта (разворот с пропиской)</span>
+						</label>
+<!--						<file-upload upload-label="Свидетельство ИНН" class="upload"></file-upload>-->
+<!--						<file-upload upload-label="Фото или скан паспорта (разворот с фото)" class="upload"></file-upload>-->
+<!--						<file-upload upload-label="Фото или скан паспорта (разворот с пропиской)" class="upload"></file-upload>-->
+					</div>
+
+					<div class="office w-100 mt-1">
+						Выбор офиса для обслуживания
+						<label class="mt-1">
+							<input type="radio" name="radio"/>
+							<span>Новосибирск</span>
+						</label>
+						<label>
+							<input type="radio" name="radio"/>
+							<span>Екатеринбург</span>
+						</label>
+						<label>
+							<input type="radio" name="radio"/>
+							<span>Челябинск</span>
+						</label>
+						<label>
+							<input type="radio" name="radio"/>
+							<span>Санкт-Петербург</span>
+						</label>
+					</div>
+
+					<label
+						class="tf-checkbox path mt-1 w-100"
+						style="margin-left: 0.5rem"
+					>
+						<input type="checkbox">
+						<svg viewBox="0 0 21 21">
+							<path d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186"></path>
+						</svg>
+						<span>Согласен с обработкой <a class="personal_data" href="">персональных данных</a></span>
+					</label>
+					<button class="button w-100" type="submit">Отправить данные</button>
+				</form>
+			</div>
+		</section>
+	</div>
+</main>
+
+<footer-component></footer-component>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+header {
+  @media (max-width: 34rem) {
+    top: 0;
+  }
+}
+
+.registration {
+  h2 {
+    line-height: 1.3;
+  }
+}
+
+.form__wrapper {
+  .registration__form {
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+
+
+
