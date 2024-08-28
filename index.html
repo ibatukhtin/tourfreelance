@@ -12,7 +12,7 @@
 	<link rel="apple-touch-icon" sizes="144x144" href="icons/favicon-144x144.png">
 	<link rel="apple-touch-icon" sizes="152x152" href="icons/favicon-152x152.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="icons/favicon-180x180.png">
-	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="icon" type="image/svg+xml" href="favicon.svg">
 	<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
@@ -33,14 +33,15 @@
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="https://tourfreelance.ru/img/logo.webp">
 	<meta property="og:url" content="https://tourfreelance.ru/">
-	<link rel="stylesheet" href="./css/normalize.css">
+	<script src="js/scrollTo.js" type="text/javascript" defer></script>
 	<script src="js/footer.js" type="text/javascript" defer></script>
 	<script src="js/splide.min.js"></script>
 	<script src="js/splide-extension-auto-scroll.min.js"></script>
 	<script src="js/splide-extension-intersection.min.js"></script>
-	<link href="css/splide.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="./css/styles.css">
 	<script src="js/splide_init.js" defer></script>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="css/splide.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <header>
@@ -69,7 +70,9 @@
 
 		<div class="container">
 			<section class="benefits">
-				<p class="text__large text-center">Вы можете быть новичком в туризме или опытным менеджером, студентом или пенсионером, предпринимателем, работником по найму или самозанятым – наша компания готова сотрудничать со всеми, независимо от опыта работы, возраста и сферы деятельности.</p>
+				<p class="text__large text-center">Вы можете быть новичком в туризме или опытным менеджером, студентом или
+					пенсионером, предпринимателем, работником по найму или самозанятым – наша компания готова сотрудничать со
+					всеми, независимо от опыта работы, возраста и сферы деятельности.</p>
 				<div class="splide mt-4" aria-label="Выгода работы с Тур Фриланс">
 					<div class="splide__track">
 						<ul class="splide__list">
@@ -100,7 +103,8 @@
 							<li class="splide__slide">
 								<img src="img/slide5.webp" alt="" />
 								<div class="desc">
-									Вы можете рассказать в соцсетях, мессенджерах, домовых чатах и других сообществах о спецпредложениях, акциях и распродажах своим близким, друзьям, знакомым.
+									Вы можете рассказать в соцсетях, мессенджерах, домовых чатах и других сообществах о спецпредложениях,
+									акциях и распродажах своим близким, друзьям, знакомым.
 								</div>
 							</li>
 							<li class="splide__slide">
@@ -187,7 +191,10 @@
 			</section>
 
 			<section>
-				<p class="text__large text-center">Если остались вопросы, Вы можете задать их в чате, написать на электронную почту или позвонить в выбранный Вами офис.</p>
+				<p class="text__large text-center">
+					Если остались вопросы, Вы можете задать их в чате, написать на электронную
+					почту или позвонить в выбранный Вами офис.
+				</p>
 				<div class="content-center mt-4">
 					<div class="button" id="toContacts">КОНТАКТЫ</div>
 				</div>
@@ -202,15 +209,16 @@
 					</p>
 					<form action="" class="registration__form">
 						<label class="w-100">
-							<input class="tf-input w-100" type="text" placeholder="Ваше имя" />
+							<input id="name" class="tf-input w-100" type="text" placeholder="Ваше имя" />
 						</label>
 						<label class="w-100">
-							<input class="tf-input w-100" type="text" placeholder="E-mail" />
+							<input id="email" class="tf-input w-100" type="text" placeholder="E-mail" />
 						</label>
 						<label class="tf-checkbox path mt-1">
-							<input type="checkbox">
+							<input id="confirm" type="checkbox">
 							<svg viewBox="0 0 21 21">
-								<path d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186"></path>
+								<path
+									d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186"></path>
 							</svg>
 							<span>Согласен с обработкой <a class="personal_data" href="">персональных данных</a></span>
 						</label>
@@ -224,16 +232,5 @@
 
 <footer-component></footer-component>
 
-<script>
-  document.getElementById('toRegistration1').addEventListener('click', function() {
-    document.querySelector('#registration').scrollIntoView({ behavior: 'smooth' });
-  });
-  document.getElementById('toRegistration2').addEventListener('click', function() {
-    document.querySelector('#registration').scrollIntoView({ behavior: 'smooth' });
-  });
-  document.getElementById('toContacts').addEventListener('click', function() {
-    document.querySelector('#footer').scrollIntoView({ behavior: 'smooth' });
-  });
-</script>
 </body>
 </html>
