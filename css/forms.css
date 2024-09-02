@@ -118,8 +118,9 @@
   gap: 1rem;
   width: 100%;
   .file__upload {
+    position: relative;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     width: 100%;
     padding: 0.7rem 1.5rem;
     color: var(--Text-Black);
@@ -129,6 +130,11 @@
     border-radius: 2rem;
     &:hover {
       background-color: rgba(199, 123, 0, 0.15);
+    }
+    .selected {
+      font-size: 12px;
+      opacity: 0.6;
+      transition: all 0.2s ease-in-out;
     }
   }
 }

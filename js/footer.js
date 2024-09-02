@@ -40,6 +40,10 @@ class Footer extends HTMLElement {
                   <b>E-mail:</b>
                   <p>tourfreelance@mail.ru</p>
                 </div>
+                <div class="contacts__grid-item">
+                  <b></b>
+                  <a href="" target="_blank" style="width: fit-content">Публичная оферта</a>
+                </div>
               </div>
             </div>
           </div>
