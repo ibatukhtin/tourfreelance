@@ -6,4 +6,6 @@ function scrollTo(clicked, target) {
 
 scrollTo('toRegistration1', 'registration');
 scrollTo('toRegistration2', 'registration');
-scrollTo('toContacts', 'footer');
+scrollTo('toRegistration3', 'registration');
+scrollTo('toContacts1', 'footer');
+scrollTo('toContacts2', 'footer');

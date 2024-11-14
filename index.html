@@ -35,6 +35,7 @@
 	<meta property="og:url" content="https://tourfreelance.ru/">
 	<script src="js/scrollTo.js" type="text/javascript" defer></script>
 	<script src="js/footer.js" type="text/javascript" defer></script>
+	<script src="js/social.js" type="text/javascript" defer></script>
 	<script src="js/splide.min.js"></script>
 	<script src="js/splide-extension-auto-scroll.min.js"></script>
 	<script src="js/splide-extension-intersection.min.js"></script>
@@ -46,10 +47,21 @@
 <body>
 <header>
 	<div class="container h-100">
-		<div class="logo h-100">
-			<div class="tour">Tour</div>
-			<div class="freelance">Freelance.ru</div>
+		<div class="header-wrapper">
+			<div class="logo h-100">
+				<div class="tour">Tour</div>
+				<div class="freelance">Freelance.ru</div>
+			</div>
+
+			<div class="menu">
+				<a id="toRegistration3">Регистрация</a>
+				<a href="">Авторизация</a>
+				<a id="toContacts1">Контакты</a>
+			</div>
+
+			<social-component></social-component>
 		</div>
+
 	</div>
 </header>
 
@@ -57,6 +69,10 @@
 	<article>
 		<section class="hero">
 			<div class="hero__wrapper">
+				<div class="slogan">
+					<p>Сервис бронирования туристических поездок<br>и путешествий для фрилансеров</p>
+				</div>
+
 				<div class="hero__content">
 					<h1 class="hero__headline">Стань фрилансером!</h1>
 					<p class="hero__desc">Фриланс – это не работа, фриланс – это образ жизни!</p>
@@ -196,7 +212,7 @@
 					почту или позвонить в выбранный Вами офис.
 				</p>
 				<div class="content-center mt-4">
-					<div class="button" id="toContacts">КОНТАКТЫ</div>
+					<div class="button" id="toContacts2">КОНТАКТЫ</div>
 				</div>
 			</section>
 
