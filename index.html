@@ -40,9 +40,11 @@
 	<script src="js/splide-extension-auto-scroll.min.js"></script>
 	<script src="js/splide-extension-intersection.min.js"></script>
 	<script src="js/splide_init.js" defer></script>
+	<script src="js/accordion.js" defer></script>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href="css/splide.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/accordion.css">
 </head>
 <body>
 <header>
@@ -54,9 +56,13 @@
 			</div>
 
 			<div class="menu">
-				<a id="toRegistration3">Регистрация</a>
+				<a class="to-registration">Регистрация</a>
 				<a href="">Авторизация</a>
-				<a id="toContacts1">Контакты</a>
+				<a class="to-contacts">Контакты</a>
+			</div>
+
+			<div class="menu-mobile">
+				<a><img src="img/enter.svg" alt="Авторизация"></a>
 			</div>
 
 			<social-component></social-component>
@@ -77,7 +83,7 @@
 					<h1 class="hero__headline">Стань фрилансером!</h1>
 					<p class="hero__desc">Фриланс – это не работа, фриланс – это образ жизни!</p>
 					<div class="button-wrapper">
-						<div id="toRegistration1" class="button">ПРИСОЕДИНИТЬСЯ</div>
+						<div class="button to-registration">ПРИСОЕДИНИТЬСЯ</div>
 					</div>
 				</div>
 				<img src="img/hero.webp" alt="Стань фрилансером!" />
@@ -134,85 +140,57 @@
 				</div>
 			</section>
 
-			<section class="advantages">
-				<p class="text__extra-large text-center">Почему Вам НЕОБХОДИМО работать именно с нашей компанией!</p>
-				<div>
-					<div class="advantage">
-						<img src="img/collaboration.svg" alt="" />
-						<p>
-							Мы сотрудничаем с десятками туроператоров, имея от них наиболее выгодные условия
-						</p>
-					</div>
-
-					<div class="advantage">
-						<img src="img/profit.svg" alt="" />
-						<p>
-							Ваш максимальный доход с первой заявки и он не зависит от объема продаж
-						</p>
-					</div>
-
-					<div class="advantage">
-						<img src="img/tax-free.svg" alt="" />
-						<p>
-							Отсутствие дополнительных сборов и комиссий
-						</p>
-					</div>
-
-					<div class="advantage">
-						<img src="img/payment.svg" alt="" />
-						<p>
-							Удобная и безопасная система оплаты – Ваш турист сможет оплатить по QR-коду, банковской картой, в кредит
-						</p>
-					</div>
-
-					<div class="advantage">
-						<img src="img/office.svg" alt="" />
-						<p>
-							Можете выбрать удобный офис-партнер с учетом часового пояса и Ваших личных предпочтений
-						</p>
-					</div>
-
-					<div class="advantage">
-						<img src="img/online.svg" alt="" />
-						<p>
-							100% он-лайн. Мы сотрудничаем с одной из самых технологичных и надёжных платформ - Centerbooking.ru
-						</p>
-					</div>
-
-					<div class="advantage">
-						<img src="img/curator.svg" alt="" />
-						<p>
-							Личный куратор в выбранном Вами офисе
-						</p>
-					</div>
-
-					<div class="advantage">
-						<img src="img/learning.svg" alt="" />
-						<p>
-							Возможность первичного обучения и постоянного обновления знаний о турпродукте
-						</p>
-					</div>
-
-					<div class="advantage">
-						<img src="img/documents.svg" alt="" />
-						<p>
-							Полный пакет документов, соответствующий текущему законодательству
-						</p>
-					</div>
+			<section>
+				<div class="text__extra-large text-center mb-2">FAQ</div>
+				<button class="accordion-header"> Что нужно, чтобы начать работу с Вами?  <div class="arrow__wrapper"> <i class="arrow"></i></div>
+				</button>
+				<div class="accordion-content">
+					<p>Для начала работы достаточно зарегистрироваться и Вы получите доступ к системе бронирования услуг и к личному кабинету. Кроме того, Вы можете без прохождения регистрации получить временный доступ на 5 рабочих дней, чтобы убедиться в удобстве работы и увидеть размер Вашего вознаграждения. Для получения такого доступа необходимо сделать запрос на info@tourfreelance.ru</p>
 				</div>
 
-				<div class="content-center">
-					<div class="button" id="toRegistration2">ЗАРЕГИСТИРОВАТЬСЯ</div>
+				<button class="accordion-header "> Могу я получить поддержку для работы с сервисом? <div class="arrow__wrapper"> <i class="arrow"></i></div>
+				</button>
+				<div class="accordion-content">
+					<p>Мы поддерживаем всех новых пользователей. При подключении к сервису вы сможете выбрать для себя офис обслуживания и персонального куратора. Ваш куратор, не только поможет освоить сервис, но и даст советы при подборе услуг, бронирований и текущей работе с туристами и заявками.</p>
+				</div>
+
+				<button class="accordion-header"> У меня нет опыта работы в туризме, могу я сотрудничать с вами? <div class="arrow__wrapper"><i class="arrow"></i></div>
+				</button>
+				<div class="accordion-content ">
+					<p>Для нас не важно, являетесь ли Вы опытным туристическим менеджером или делаете первые шаги в туризме. У нас нет никаких требований к объёмам и регулярности заявок. Работайте сколько хотите в своё удовольствие и получайте доход, а если нужна помощь - мы будем рядом!</p>
+				</div>
+
+				<button class="accordion-header"> Сколько я могу заработать пользуясь вашим сервисом? <div class="arrow__wrapper"><i class="arrow"></i></div>
+				</button>
+				<div class="accordion-content ">
+					<p>Все пользователи сразу получают максимальное вознаграждение по единому тарифу с первой заявки. Размер вознаграждения Вы увидите у себя в личном кабинете после регистрации. Он не зависит от объемов и частоты бронирования. Никаких пользовательских сборов в сервисе не предусмотрено</p>
+				</div>
+
+				<button class="accordion-header"> Сколько времени мне нужно посвятить работе? <div class="arrow__wrapper"><i class="arrow"></i></div>
+				</button>
+				<div class="accordion-content ">
+					<p>Ровно столько, сколько захотите. Просто выслушайте заказчика и забронируйте тур. Нет необходимости постоянно контролировать заявку, мы возьмём это на себя. А если потребуется Ваше участие или будет что-то важное для Вас - пришлём уведомление или свяжемся с Вами. А в нужный момент мы сами загрузим документы для путешествия.</p>
+				</div>
+
+				<button class="accordion-header"> Почему мне стоит подключиться к Вашему сервису? <div class="arrow__wrapper"><i class="arrow"></i></div>
+				</button>
+				<div class="accordion-content ">
+					<p>Вы сможете в одном личном кабинете получить доступ к бронированию услуг самых лучших и надёжных туроператоров, услуги которых закрывают всю географию и варианты путешествий. Вам также будет доступны электронный документооборот, интернет-эквайринг и компактная CRM система для работы с заявками. Опыт работы в туризме нашей команды разработки и менеджеров поддержки пользователей исчисляется десятками лет, и Вы получите его вместе с подключением к нашему сервису.</p>
+				</div>
+
+				<button class="accordion-header"> Как происходит оформление документов туриста? <div class="arrow__wrapper"><i class="arrow"></i></div>
+				</button>
+				<div class="accordion-content ">
+					<p>При оформлении тура договор туриста заключается с компанией ООО "Лайт Трэвэл", с ней турист производит взаиморасчёты по договору напрямую. Таким образом, вся ответственность по оказанию услуг по договору и уплате налогов лежит на компании ООО "Лайт Трэвэл". Все документы по заявке формируются автоматически и становятся доступными туристу для ознакомления при проведении оплаты. Фрилансер сотрудничает с сервисом как физическое лицо, оказывающее услуги по привлечению и консультированию туриста.</p>
 				</div>
 			</section>
 
 			<section>
 				<p class="text__large text-center">
-					Если остались вопросы, Вы можете задать их в чате, написать на электронную
-					почту или позвонить в выбранный Вами офис.
+					Остались вопросы? Задайте их нашему представителю, или сразу переходите к регистрации!
 				</p>
 				<div class="content-center mt-4">
-					<div class="button" id="toContacts2">КОНТАКТЫ</div>
+					<div class="button to-contacts">КОНТАКТЫ</div>
 				</div>
 			</section>
 

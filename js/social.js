@@ -6,9 +6,15 @@ class Social extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div class="social">
-        <img src="img/vk.svg" alt="vk" />
-        <img src="img/telegram.svg" alt="telegram" />
-        <img src="img/odnoklassniki.svg" alt="odnoklassniki" />
+        <a href="">
+          <img src="img/vk.svg" alt="vk" />
+        </a>
+        <a href="">
+          <img src="img/telegram.svg" alt="telegram" />
+        </a>
+        <a href="">
+          <img src="img/odnoklassniki.svg" alt="odnoklassniki" />
+        </a>
       </div>
     `;
   }

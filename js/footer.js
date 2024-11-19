@@ -51,7 +51,13 @@ class Footer extends HTMLElement {
               <div class="contacts__grid-item">
                 <a href="" target="_blank" style="width: fit-content">Политика конфиденциальности</a>
               </div>
-              <social-component></social-component>
+              <div class="icons__grid">
+                <social-component></social-component>
+                <div class="pay">
+                  <img src="img/mir.svg" alt="mir" />
+                  <img src="img/sbp.svg" style="height: 2rem" alt="sbp" />
+                </div>
+              </div>
             </div>
           </div>
         </div>

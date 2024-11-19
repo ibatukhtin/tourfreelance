@@ -1,11 +1,13 @@
-function scrollTo(clicked, target) {
-  document.getElementById(clicked).addEventListener('click', function() {
-    document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
-  });
-}
+const toRegistrations = document.querySelectorAll('.to-registration');
 
-scrollTo('toRegistration1', 'registration');
-scrollTo('toRegistration2', 'registration');
-scrollTo('toRegistration3', 'registration');
-scrollTo('toContacts1', 'footer');
-scrollTo('toContacts2', 'footer');
+toRegistrations.forEach(
+  (toRegistration, i) => {
+    toRegistration.addEventListener("click", () => document.getElementById('registration').scrollIntoView({ behavior: 'smooth' }))
+  });
+
+const toContacts = document.querySelectorAll('.to-contacts');
+
+toContacts.forEach(
+  (toRegistration, i) => {
+    toRegistration.addEventListener("click", () => document.getElementById('footer').scrollIntoView({ behavior: 'smooth' }))
+  });

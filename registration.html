@@ -33,7 +33,9 @@
 	<meta property="og:type" content="article">
 	<meta property="og:image" content="https://tourfreelance.ru/img/logo.webp">
 	<meta property="og:url" content="https://tourfreelance.ru/registration.html">
+	<script src="js/scrollTo.js" type="text/javascript" defer></script>
 	<script src="js/footer.js" type="text/javascript" defer></script>
+	<script src="js/social.js" type="text/javascript" defer></script>
 	<script src="js/files_upload.js" defer></script>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
@@ -42,10 +44,21 @@
 <body>
 <header>
 	<div class="container h-100">
-		<div class="logo h-100">
-			<div class="tour">Tour</div>
-			<div class="freelance">Freelance.ru</div>
+		<div class="header-wrapper">
+			<div class="logo h-100">
+				<div class="tour">Tour</div>
+				<div class="freelance">Freelance.ru</div>
+			</div>
+
+			<div class="menu">
+<!--				<a class="to-registration">Регистрация</a>-->
+				<a href="">Авторизация</a>
+				<a class="to-contacts">Контакты</a>
+			</div>
+
+			<social-component></social-component>
 		</div>
+
 	</div>
 </header>
 
