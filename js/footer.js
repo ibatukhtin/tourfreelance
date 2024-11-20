@@ -22,23 +22,23 @@ class Footer extends HTMLElement {
               <div class="contacts__grid">
                 <div class="contacts__grid-item">
                  <b>Новосибирск:</b>
-                  <p>+7 (999) 999-99-99</p>
+                  <p>+7 (383) 280-46-60</p>
                 </div>
                 <div class="contacts__grid-item">
                   <b>Екатеринбург:</b>
-                  <p>+7 (999) 999-99-99</p>
+                  <p>7 (343) 226-41-64</p>
                 </div>
                 <div class="contacts__grid-item">
                   <b>Челябинск:</b>
-                  <p>+7 (999) 999-99-99</p>
+                  <p>+7 (995) 469-90-69</p>
                 </div>
                 <div class="contacts__grid-item">
                   <b>Санкт-Петербург:</b>
-                  <p>+7 (999) 999-99-99</p>
+                  <p>+7 (812) 601-06-90</p>
                 </div>
                 <div class="contacts__grid-item">
                   <b>E-mail:</b>
-                  <p>tourfreelance@mail.ru</p>
+                  <p>info@tourfreelance.ru</p>
                 </div>
                 
               </div>
