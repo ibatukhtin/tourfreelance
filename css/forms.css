@@ -17,6 +17,7 @@
 
 .tf-checkbox-wrapper {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
   gap: 0.4rem;
   .tf-checkbox {
@@ -102,9 +103,13 @@
         --scale: 0;
       }
     }
+    .tf-checkbox-confirm {
+      white-space: nowrap;
+    }
   }
   .personal_data {
     line-height: 1.4;
+    white-space: nowrap;
   }
 }
 
