@@ -37,9 +37,12 @@
 	<script src="js/footer.js" type="text/javascript" defer></script>
 	<script src="js/social.js" type="text/javascript" defer></script>
 	<script src="js/files_upload.js" defer></script>
+	<script src="js/modal.js" defer=""></script>
+	<script src="js/persdata.js" defer></script>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/registration.css">
+	<link rel="stylesheet" href="css/modal.css">
 </head>
 <body>
 <header>
@@ -118,17 +121,16 @@
 						</label>
 					</div>
 
-					<label
-						class="tf-checkbox path mt-1 w-100"
-						style="margin-left: 0.5rem"
-					>
-						<input type="checkbox">
-						<svg viewBox="0 0 21 21">
-							<path
-								d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186"></path>
-						</svg>
-						<span>Согласен с обработкой <a class="personal_data" href="">персональных данных</a></span>
-					</label>
+					<div class="tf-checkbox-wrapper mt-1 w-100">
+						<label class="tf-checkbox path" id="persdata-label">
+							<input id="persdata" type="checkbox" name="persdata">
+							<svg viewBox="0 0 21 21">
+								<path d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186"></path>
+							</svg>
+							<span>Согласен с обработкой</span>
+						</label>
+						<a class="g-recaptcha personal_data" id="persdata-click">персональных данных</a>
+					</div>
 					<button class="button w-100" type="submit">Отправить данные</button>
 				</form>
 			</div>
