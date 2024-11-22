@@ -26,7 +26,7 @@ class Footer extends HTMLElement {
                 </div>
                 <div class="contacts__grid-item">
                   <b>Екатеринбург:</b>
-                  <p>7 (343) 226-41-64</p>
+                  <p>+7 (343) 226-41-64</p>
                 </div>
                 <div class="contacts__grid-item">
                   <b>Челябинск:</b>
