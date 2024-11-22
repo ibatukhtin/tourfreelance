@@ -22,23 +22,23 @@ class Footer extends HTMLElement {
               <div class="contacts__grid">
                 <div class="contacts__grid-item">
                  <b>Новосибирск:</b>
-                  <p>+7 (383) 280-46-60</p>
+                  <p><a href="tel:+73832804660">+7 (383) 280-46-60</a></p>
                 </div>
                 <div class="contacts__grid-item">
                   <b>Екатеринбург:</b>
-                  <p>+7 (343) 226-41-64</p>
+                  <p><a href="tel:+73432264164">+7 (343) 226-41-64</a></p>
                 </div>
                 <div class="contacts__grid-item">
                   <b>Челябинск:</b>
-                  <p>+7 (995) 469-90-69</p>
+                  <p><a href="tel:+79954699069">+7 (995) 469-90-69</a></p>
                 </div>
                 <div class="contacts__grid-item">
                   <b>Санкт-Петербург:</b>
-                  <p>+7 (812) 601-06-90</p>
+                  <p><a href="tel:+78126010690">+7 (812) 601-06-90</a></p>
                 </div>
                 <div class="contacts__grid-item">
                   <b>E-mail:</b>
-                  <p>info@tourfreelance.ru</p>
+                  <p><a href="mailto:info@tourfreelance.ru">info@tourfreelance.ru</a></p>
                 </div>
                 
               </div>
@@ -46,7 +46,7 @@ class Footer extends HTMLElement {
             
             <div class="links__grid">
               <div class="contacts__grid-item">
-                <a href="" target="_blank" style="width: fit-content">Публичная оферта</a>
+                <a href="" target="_blank" style="width: fit-content">Оферта</a>
               </div>
               <div class="contacts__grid-item">
                 <a href="" target="_blank" style="width: fit-content">Политика конфиденциальности</a>
