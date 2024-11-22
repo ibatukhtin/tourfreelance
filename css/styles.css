@@ -323,3 +323,7 @@
 social-component {
   margin-left: auto;
 }
+
+.no-scroll {
+  overflow: hidden;
+}

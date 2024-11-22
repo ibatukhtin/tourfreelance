@@ -35,23 +35,19 @@ class ItcModal {
       return;
     }
     this.#elem.classList.add('itc-modal-show');
-    const scrollbarWidth = Math.abs(window.innerWidth - document.documentElement.clientWidth);
-    if (window.innerWidth > document.body.clientWidth + scrollbarWidth) {
-      return;
-    }
-    document.body.style.paddingRight = `${scrollbarWidth}px`;
-    document.body.style.overflow = 'hidden';
+    const body = document.body;
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    body.style.paddingRight = `${scrollbarWidth}px`;
+    body.classList.add("no-scroll");
     this.#elem.dispatchEvent(this.#eventShowModal);
   }
 
   hide() {
     this.#elem.classList.remove('itc-modal-show');
     this.#elem.dispatchEvent(this.#eventHideModal);
-    document.body.style.paddingRight = '';
-    document.body.offsetHeight;
-    this.#elem.addEventListener('transitionend', () => {
-      document.body.style.overflow = '';
-    }, { once: true });
+    const body = document.body;
+    body.style.paddingRight = "";
+    body.classList.remove("no-scroll");
   }
 
   dispose() {
