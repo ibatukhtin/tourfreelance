@@ -54,13 +54,9 @@ header {
     }
 
     a {
-      display: block;
+      display: flex;
+      align-items: center;
       border: none;
-    }
-
-    img {
-      width: 32px;
-      height: 32px;
     }
   }
 
